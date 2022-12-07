@@ -1,0 +1,238 @@
+{% load static %}
+<!--
+<section id="portfolio" class="portfoio">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>OBRAS REALIZADAS</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">Todas</li>
+            <li data-filter=".filter-app">Refratários</li>
+            <li data-filter=".filter-app">Eletromecânica</li>
+            <li data-filter=".filter-card">Isolamento</li>
+            <li data-filter=".filter-web">Andaime</li>
+            <li data-filter=".filter-api">Outros</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row portfolio-container">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <img src="{% static 'img/portfolio/portfolio1.jpg' %}" class="img-fluid" alt="obra nexa">
+          <div class="portfolio-info">
+            <h4>NEXA Resources</h4>
+            <p>Refratário</p>
+            <a href="{% static 'img/portfolio/portfolio1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="NEXA Resources - Lima/Peru"><i class="bx bx-plus"></i></a>
+            <a href="{% url 'portfolio-details1' %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <img src="{% static 'img/portfolio/portfolio2.jpg' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Arcelor Mittal</h4>
+            <p>Refratário</p>
+            <a href="{% static 'img/portfolio/portfolio2.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+            <a href="{% url 'portfolio-details1' %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <img src="{% static 'img/portfolio/portfolio3.jpg' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Saint Gobain</h4>
+            <p>Refratário</p>
+            <a href="{% static 'img/portfolio/portfolio3.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Saint Gobain"><i class="bx bx-plus"></i></a>
+            <a href="{% url 'portfolio-details2' %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <img src="{% static 'img/portfolio/portfolio4.jpg' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Gerdau</h4>
+            <p>Refratário</p>
+            <a href="{% static 'img/portfolio/portfolio4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+            <a href="{% url 'portfolio-details1' %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <img src="{% static 'img/portfolio/portfolio5.jpg' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>CSN</h4>
+            <p>Andaimes</p>
+            <a href="{% static 'img/portfolio/portfolio5.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+            <a href="{% url 'portfolio-details1' %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <img src="{% static 'img/portfolio/portfolio6.jpg' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Vallourec</h4>
+            <p>Isolamento</p>
+            <a href="{% static 'img/portfolio/portfolio6.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+            <a href="{% url 'portfolio-details1' %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <img src="{% static 'img/portfolio/portfolio7.jpg' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>CSN</h4>
+            <p>Refratário</p>
+            <a href="{% static 'img/portfolio/portfolio7.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+            <a href="{% url 'portfolio-details1' %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <img src="{% static 'img/portfolio/portfolio8.jpg' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Maringá</h4>
+            <p>Isolamento</p>
+            <a href="{% static 'img/portfolio/portfolio8.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+            <a href="{% url 'portfolio-details1' %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <img src="{% static 'img/portfolio/portfolio9.jpg' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Vale</h4>
+            <p>Isolamento</p>
+            <a href="{% static 'img/portfolio/portfolio9.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+            <a href="{% url 'portfolio-details1' %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-api">
+          <img src="{% static 'img/portfolio/nexa03.jpg' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Lafarge Holcin</h4>
+            <p>Isolamento</p>
+            <a href="{% static 'img/portfolio/nexa03.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+            <a href="{% url 'portfolio-details1' %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-api">
+          <img src="{% static 'img/portfolio/saintgobain03.jpg' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Heinecken</h4>
+            <p>Isolamento</p>
+            <a href="{% static 'img/portfolio/saintgobain03.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+            <a href="{% url 'portfolio-details1' %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-api">
+          <img src="{% static 'img/portfolio/nexa02.jpg' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Stepan</h4>
+            <p>Andaimes</p>
+            <a href="{% static 'img/portfolio/nexa02.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+            <a href="{% url 'portfolio-details1' %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+</section>
+-->
+
+<!-- ======= Constructions Section ======= -->
+<section id="constructions" class="constructions">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>SOMOS ESPECIALISTAS</h2>
+      <p>Nossa paixão pela engenharia nos traz um espírito inovador onde o que importa é trazer à realidade os nossos projetos.</p>
+    </div>
+
+    <div class="row gy-4">
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-item col-12">
+          <div class="row">
+            <!--
+            <div class="col-xl-5">
+              <div class="card-bg" style="background-image: url(static/img/constructions-3.jpg);"></div>
+            </div>
+            -->
+            <div class="col-12 d-flex align-items-center">
+              <div class="card-body">
+                <h4 i class="bi bi-bricks"></i> Andaimes</h4>
+                <p>As atividades envolvendo andaimes exigem bastante técnica não somente para garantir a conclusão do que foi solicitado quanto à integridade física de seus executantes. Nossos colabordores são altamente treinados nas Normas Regulamentadoras sobre Construção Civil e Trabalho em Altura.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Card Item -->
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-item col-12">
+          <div class="row">
+            <!--
+            <div class="col-xl-5">
+              <div class="card-bg" style="background-image: url(static/img/constructions-3.jpg);"></div>
+            </div>
+            -->
+            <div class="col-12 d-flex align-items-center">
+              <div class="card-body">
+                <h4 i class="bi bi-bricks"></i> Eletromecânica</h4>
+                <p>Integramos as áreas de instrumentação e controle de processos industriais com a eletrônica e mecânica industrial, manutenção de equipamentos e instalações eletroeletrônicas industriais, observando normas técnicas e de segurança do trabalho. Para isso nos atualizamos e investimos em tecnologia.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Card Item -->
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="card-item col-12">
+          <div class="row">
+            <!--
+            <div class="col-xl-5">
+              <div class="card-bg" style="background-image: url(static/img/constructions-3.jpg);"></div>
+            </div>
+            -->
+            <div class="col-12 d-flex align-items-center">
+              <div class="card-body">
+                <h4 i class="bi bi-bricks"></i> Isolamento Térmico</h4>
+                <p>Entre os principais benefícios de um isolamento térmico eficaz, podemos destacar a redução de consumo de energia, qualidade do material a ser produzido, diminuição de custos operacionais e perdas, menores taxas de manutenção de máquinas e equipamentos industriais. Possuímos um know-how para oferecer isso aos nossos clientes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Card Item -->
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="card-item col-12">
+          <div class="row">
+            <!--
+            <div class="col-xl-5">
+              <div class="card-bg" style="background-image: url(static/img/constructions-3.jpg);"></div>
+            </div>
+            -->
+            <div class="col-12 d-flex align-items-center">
+              <div class="card-body">
+                <h4 i class="bi bi-bricks"></i> Refratários</h4>
+                <p>A DESA se especializa na aplicação de soluções com revestimentos cerâmicos, para solucionar problemas de desgaste por abrasão, erosão, corrosão e impacto, aplicados nos equipamentos como calhas, solos, tambores e tubulações, atendendo as necessidades nos mercados de mineração, siderurgia, cimento e grãos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Card Item -->
+
+    </div>
+
+  </div>
+</section><!-- End Constructions Section -->
