@@ -1,32 +1,20 @@
 from django.shortcuts import render
-from django.views.generic import FormView, TemplateView, ListView, DetailView
+from django.views.generic import TemplateView, ListView, DetailView
 from django.urls import reverse_lazy
 from django.contrib import messages
-from .forms import ContatoForm
 from .models import Post
 
 def blog(request):
     posts = Post.objects.all()
     return render(request, 'blog.html', {'posts':posts})
 
-class IndexView(FormView):
+class IndexView(TemplateView):
     template_name = 'index.html'
-    
-    form_class = ContatoForm
-    success_url = reverse_lazy('index')
     
     def get_context_data(self, **kwargs):
         context = super(IndexView, self).get_context_data(**kwargs)
+        context['post'] = Post.objects.all()
         return context
-    
-    def form_valid(self, form, *args, **kwargs):
-        form.send_mail()
-        messages.success(self.request, "E-mail enviado com sucesso")
-        return super(IndexView, self).form_valid(form, *args, **kwargs)
-    
-    def form_invalid(self, form, *args, **kwargs):
-        messages.error(self.request, "Erro ao enviar e-mail")
-        return super(IndexView, self).form_invalid(form, *args, **kwargs)
 
 class PortfolioDetails1View(TemplateView):
     template_name = 'portfolio-details1.html' 
