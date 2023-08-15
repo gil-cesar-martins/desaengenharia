@@ -1,0 +1,14 @@
+{% extends 'base3.html' %}
+{% load static %}
+{% block content %}
+    <section id="hero" class="d-flex justify-cntent-center align-items-center">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">500 <span>ERRO DE PROCESSAMENTO</span></h2>
+            <p class="animate__animated animate__fadeInUp">Infelizmente não foi possível processar a requisição.</p>
+            <a href="{% url 'index' %}" class="btn-get-started animate__animated animate__fadeInUp scrollto">Voltar para a Página Principal</a>
+          </div>
+        </div>   
+    </section>
+{% endblock %}

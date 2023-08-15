@@ -1,0 +1,182 @@
+<!--Portfolio da NEXA Resources-->
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>  
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>DESA Engenharia</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/favicon.png' %}" rel="icon">
+  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css" rel="stylesheet' %}">
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- ======= Top Bar ======= -->
+    <div id="topbar" class="fixed-top d-flex align-items-center topbar-inner-pages">
+      <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope-fill"></i><a href="mailto:contato@desaengenharia.com.br">contato@desaengenharia.com.br</a>
+        </div>
+        <div class="cta d-none d-md-block">
+          <a href="{% url 'index' %}" class="scrollto">Voltar</a>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center header-inner-pages">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="{% url 'index' %}" class="logo p-1"><img src="{% static 'img/logodesa2.png' %}" alt="logodesa" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="{% url 'index' %}">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">Sobre</a></li>
+
+          <li class="dropdown"><a href="#"><span>Serviços</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Montagem e Manutenção</a></li>
+              <li class="dropdown"><a href="#"><span>Refratários</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Montagem Refratária</a></li>
+                  <li><a href="#">Manutenção Refratária</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>Mecânica</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Montagem Mecânica</a></li>
+                  <li><a href="#">Manutenção Mecânica</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Fornos Rotativos</a></li>
+              <li><a href="#">Isolamento Térmico</a></li>
+              <li><a href="#">Projetos de Andaimes</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto " href="#portfolio">Obras</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a class="nav-link scrollto" href="#services">Vagas</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contato</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+    </header><!-- End Header -->
+
+    <main id="main">
+
+      <!-- ======= Breadcrumbs ======= -->
+      <section id="breadcrumbs" class="breadcrumbs">
+        <div class="container">
+
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li>Detalhes</li>
+        </ol>
+        <h2>Detalhes da Obra</h2>
+
+        </div>
+      </section><!-- End Breadcrumbs -->
+
+      <!-- ======= Portfolio Details Section ======= -->
+      <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="{% static 'img/portfolio/nexa01.jpg' %}" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{% static 'img/portfolio/nexa02.jpg' %}" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{% static 'img/portfolio/nexa03.jpg' %}" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Informação do Projeto</h3>
+              <ul>
+                <li><strong>Categoria</strong>: Refratário</li>
+                <li><strong>Cliente</strong>: NEXA Resources - Lima/Peru</li>
+                <li><strong>Data do Projeto</strong>: 30/07/22 - 09/08/22</li>
+                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>Isolamento Térmico da Planta VSB-U33</h2>
+              <p>
+                Os serviços prestados na unidade Vallourec Jeceaba/MG foram executados com maestria pela equipe envolvida composta por 
+                diversos especialistas. Cumprimos o nosso acordo e entregamos a obra no prazo estabelecido·Estamos orgulhosos de ter a VSB 
+                em nossa cartela de clientes e foi esta oportunidade foi um privilégio para fortalecermos nossa marca.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      </section><!-- End Portfolio Details Section -->
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    {% include 'footer.html' %}
+    <!-- End Footer -->
+
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="{% static 'vendor/aos/aos.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+    <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+    
+    <!-- Template Main JS File -->
+    <script src="{% static 'js/main.js' %}"></script>
+
+  </body>
+
+</html>
