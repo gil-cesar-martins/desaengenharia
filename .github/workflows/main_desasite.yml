@@ -55,7 +55,7 @@ jobs:
           path: .
           
       - name: Deployment
-        uses: actions/webapps-deploy@v2
+        uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
           app-name: 'desasite'
