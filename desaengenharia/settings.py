@@ -18,8 +18,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['www.desaengenharia.com.br','.desaengenharia.com.br','.desasite.azurewebsites.net','127.0.0.1','localhost']
-
+ALLOWED_HOSTS = ['desaengenharia.com.br','127.0.0.1','localhost']
 
 # Application definition
 
